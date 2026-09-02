@@ -1,0 +1,34 @@
+# --- Course material: intentionally not published ---------------------------
+# This repository is the floorplanlab library only. The Colab notebooks that use
+# it (including the 19.5 MB T5 notebook whose saved outputs pin the metrics
+# tests) live in the course repository, not here.
+Copy_of_T4_*.ipynb
+Copy_of_T5_*.ipynb
+Floor_Layout_Generation_OHD_W.ipynb
+T4_refactored.ipynb
+T5_refactored.ipynb
+OHD_W_refactored.ipynb
+CLAUDE.md
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# --- Tooling ----------------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.ipynb_checkpoints/
+
+# --- Run artefacts ----------------------------------------------------------
+runs/
+outputs/
+*.pdf
+*.zip

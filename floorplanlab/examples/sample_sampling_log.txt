@@ -1,0 +1,31 @@
+Logging to ckpts/openai_2026_03_10_10_19_06_576297
+creating model and diffusion...
+Number of model parameters: 32857874
+COSINE
+sampling...
+loading eval of target set 6
+sampling complete
+Compatibility: 3.859375
+OA: 0.8994791666666667
+sampling...
+loading eval of target set 6
+sampling complete
+Compatibility: 3.640625
+OA: 0.8828125
+sampling...
+loading eval of target set 6
+sampling complete
+Compatibility: 3.890625
+OA: 0.8489583333333334
+sampling...
+loading eval of target set 6
+sampling complete
+Compatibility: 3.875
+OA: 0.8432291666666667
+sampling...
+loading eval of target set 6
+sampling complete
+Compatibility: 3.90625
+OA: 0.8802083333333333
+Compatibility mean: 3.834375 	 Compatibility std: 0.09812699042567237
+OA mean: 0.8709374999999999 	 OA std: 0.021412268517267272

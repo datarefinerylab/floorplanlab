@@ -1,0 +1,56 @@
+Logging to ckpts/openai_2026_03_10_09_48_33_523826
+creating model and diffusion...
+Number of model parameters: 32857874
+COSINE
+sampling...
+loading eval of target set 8
+0it [00:00, ?it/s]/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py:1787: UserWarning: input's size at dim=1 does not match num_features. You can silence this warning by not passing in num_features, which is not used because affine=False
+  return forward_call(*args, **kwargs)
+1000it [00:39, 25.44it/s]
+100% 64/64 [00:08<00:00,  7.48it/s]
+100% 64/64 [00:08<00:00,  7.99it/s]
+sampling complete
+Compatibility: 6.5625
+OA: 0.9098772321428572
+sampling...
+loading eval of target set 8
+0it [00:00, ?it/s]/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py:1787: UserWarning: input's size at dim=1 does not match num_features. You can silence this warning by not passing in num_features, which is not used because affine=False
+  return forward_call(*args, **kwargs)
+1000it [00:38, 26.05it/s]
+100% 64/64 [00:08<00:00,  7.72it/s]
+100% 64/64 [00:08<00:00,  7.88it/s]
+sampling complete
+Compatibility: 6.75
+OA: 0.93359375
+sampling...
+loading eval of target set 8
+0it [00:00, ?it/s]/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py:1787: UserWarning: input's size at dim=1 does not match num_features. You can silence this warning by not passing in num_features, which is not used because affine=False
+  return forward_call(*args, **kwargs)
+1000it [00:38, 26.02it/s]
+100% 64/64 [00:08<00:00,  7.67it/s]
+100% 64/64 [00:08<00:00,  7.92it/s]
+sampling complete
+Compatibility: 6.65625
+OA: 0.9157366071428572
+sampling...
+loading eval of target set 8
+0it [00:00, ?it/s]/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py:1787: UserWarning: input's size at dim=1 does not match num_features. You can silence this warning by not passing in num_features, which is not used because affine=False
+  return forward_call(*args, **kwargs)
+1000it [00:38, 26.01it/s]
+100% 64/64 [00:08<00:00,  7.78it/s]
+100% 64/64 [00:08<00:00,  7.85it/s]
+sampling complete
+Compatibility: 6.859375
+OA: 0.9255022321428572
+sampling...
+loading eval of target set 8
+0it [00:00, ?it/s]/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py:1787: UserWarning: input's size at dim=1 does not match num_features. You can silence this warning by not passing in num_features, which is not used because affine=False
+  return forward_call(*args, **kwargs)
+1000it [00:38, 25.97it/s]
+100% 64/64 [00:08<00:00,  7.63it/s]
+100% 64/64 [00:08<00:00,  7.79it/s]
+sampling complete
+Compatibility: 6.609375
+OA: 0.9176897321428572
+Compatibility mean: 6.6875 	 Compatibility std: 0.10597390598633231
+OA mean: 0.9204799107142858 	 OA std: 0.008244965875777126

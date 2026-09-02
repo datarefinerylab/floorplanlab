@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "floorplanlab"
+version = "0.1.0"
+description = "Generate architectural floor plans with diffusion models by naming a model, not by wiring paths."
+readme = "floorplanlab/README.md"
+requires-python = ">=3.9"
+keywords = ["floor-plan", "diffusion", "generative-design", "architecture", "housediffusion"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "shapely>=2.0",
+    "pillow",
+    "cairosvg",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pyflakes"]
+
+[tool.setuptools.packages.find]
+include = ["floorplanlab*"]
+
+[tool.setuptools.package-data]
+"floorplanlab.examples" = ["*.csv", "*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
