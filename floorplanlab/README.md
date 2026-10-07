@@ -47,6 +47,9 @@ copy_files(["model250000.pt"], SOURCE_DIR, dest_ckpts)
 
 ```python
 import floorplanlab as fpl
+from google.colab import drive
+
+drive.mount("/content/drive")
 
 lab = fpl.Lab(drive_folder="my-floorplan-files")
 lab.setup("hd-rplan")
@@ -83,8 +86,14 @@ the repositories and installs their dependencies on first use.
 sources and datasets — see [Requirements](#requirements) for how to obtain them. Name it
 whatever you like and pass that name.
 
+Mount Drive explicitly in Colab before setup. `Lab` does not mount Drive or
+request authentication. Outside Colab, pass `drive_root` pointing to your local files.
+
 ```python
 import floorplanlab as fpl
+from google.colab import drive
+
+drive.mount("/content/drive")
 
 fpl.available()                                    # print the model menu
 

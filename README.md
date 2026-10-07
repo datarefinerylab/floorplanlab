@@ -8,6 +8,9 @@ Generate architectural floor plans with diffusion models by naming a model, not 
 
 ```python
 import floorplanlab as fpl
+from google.colab import drive
+
+drive.mount("/content/drive")
 
 lab = fpl.Lab(drive_folder="my-floorplan-files")
 lab.setup("hd-rplan")                      # switching models is this one string

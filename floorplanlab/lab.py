@@ -11,6 +11,9 @@ class Lab:
 
     Typical use in a notebook:
 
+        from google.colab import drive
+        drive.mount("/content/drive")
+
         lab = Lab(drive_folder="T5")
         lab.setup("ohd-oesd")
         run8 = lab.generate(target_set=8)
@@ -18,22 +21,12 @@ class Lab:
     """
 
     def __init__(self, drive_folder: str = "T5", root: str = "/content/house_diffusion",
-                 mount: bool = True, drive_root: str = "/content/drive/MyDrive"):
+                 drive_root: str = "/content/drive/MyDrive"):
         self.root = Path(root)
         self.drive_root = Path(drive_root)
         self.drive_dir = self.drive_root / drive_folder
         self.spec: Optional[models.ModelSpec] = None
         self.runs: List[runs.Run] = []
-        if mount:
-            self._mount()
-
-    def _mount(self) -> None:
-        try:
-            from google.colab import drive as _drive
-        except ImportError:
-            print("Not running in Colab; skipping Drive mount.")
-            return
-        _drive.mount(str(self.drive_root.parent), force_remount=False)
 
     # ----- setup -------------------------------------------------------
     def setup(self, model: str, install: bool = True, quiet: bool = True) -> "Lab":
@@ -48,6 +41,7 @@ class Lab:
         if not self.drive_dir.is_dir():
             raise FileNotFoundError(
                 f"Drive folder not found: {self.drive_dir}\n"
+                f"In Colab, mount Drive explicitly before calling setup().\n"
                 f"Create it in My Drive and place the shared shortcuts inside, or "
                 f"pass Lab(drive_folder='<your folder name>')."
             )

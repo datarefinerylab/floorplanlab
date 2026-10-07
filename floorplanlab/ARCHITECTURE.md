@@ -5,6 +5,9 @@ see [README.md](README.md).
 
 ```python
 import floorplanlab as fpl
+from google.colab import drive
+
+drive.mount("/content/drive")
 
 fpl.available()                       # list the models
 lab = fpl.Lab(drive_folder="T5")
